@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    justify-content: center;
+
+    &__form {
+        display: flex;
+        flex-direction:column;
+
+        max-width: 30rem;
+    }
+
+    &__name-label {
+        margin-bottom: 1rem;
+    }
+}

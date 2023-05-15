@@ -1,30 +1,18 @@
 import './App.scss';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
       <Header />
-      <AjaysFooter />
+      <Main />
+      <Footer name="Ajay" year={2023} />
+      <Footer name="Theo" year={2024} />
+      <Footer name="Estefania" year={2025} />
     </>
   );
-}
-
-function Header() {
-  return (
-    <header className="app">
-      <h1 className="app__title">Hello World</h1>
-    </header>
-  )
-}
-
-function AjaysFooter() {
-  const year = 2023;
-  
-  return (
-    <footer>
-      <p>Copyright Ajay's Amazing Idea {year}</p>
-    </footer>
-  )
 }
 
 export default App;
